@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikael Pazini</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="galaxy">
+        <div class="stars">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#start">Start</a></li>
+                        <li><a href="#about-me">About me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <span> </span>
+            </header>
+            <main id="interface">
+
+                <section id="start">
+                    <!-- <h1>START</h1> -->
+                    <h1>full stack developer</h1>
+                    <div id="presentation">
+                        <h2>Hi there!<br>I'm Mikael</h2>
+                        <p>Desenvolvendo além dos limites, transformando desafios em novas possibilidades. <br> Cada projeto é uma galáxia de ideias e cada linha de código, uma estrela</p>
+                    </div>
+                </section>
+
+                <section id="about-me">
+                    <img src="img/miakel.jpeg" alt="">
+                    <!-- <h1>ABOUT-ME</h1> -->
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quia blanditiis nemo quibusdam incidunt reiciendis accusantium, pariatur fugiat commodi sunt molestias harum nostrum nesciunt. Minima maiores deserunt architecto quo necessitatibus.</p>
+                </section> 
+
+                <section id="projects">
+                    <!-- <h1>PROJECTS</h1> -->
+                    <h2>technologies</h2>
+                    <div class="technologies">
+                        <p>JavaScript</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Bootstrap</p>
+                        <p>Jquery</p>
+                        <p>Node.JS</p>
+                        <p>Mongo DB</p>
+                        <p>React.JS</p>   
+                    </div>
+                    <div class="block">
+                        <div class="project1"></div>
+                        <div class="project2"></div>
+                        <div class="project3"></div>
+                    </div>
+                    <div class="block">
+                        <div class="project4"></div>
+                        <div class="project5"></div>
+                        <div class="project6"></div>
+                    </div>
+                </section> 
+
+                <section id="contact">
+                    <!-- <h1>CONTACT</h1> -->
+                    <!-- Localização
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18419.838614546556!2d-48.60779169999999!3d-27.574642349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95274992377753cd%3A0x529be8fdeeff09ee!2zQmFycmVpcm9zLCBTw6NvIEpvc8OpIC0gU0M!5e1!3m2!1spt-BR!2sbr!4v1731439718377!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+                    <div class="social">
+                        <div class="socialButton">
+                            <a class="linkedin" href="https://www.linkedin.com/in/mikael-luis-pazini-b57b00150/" target="_blank">
+                                <img src="icon/linkedin.png" alt="linkedin">
+                                <p>in/mikael-luis-pazini</p>
+                            </a>
+                            <button onclick="copy(this.previousElementSibling)">
+                                <img class="copy" src="icon/copy.png" alt="copy">
+                            </button>
+                        </div>
+
+                        <div class="socialButton">
+                            <a class="github" href="https://github.com/mikael-pazini" target="_blank">
+                                <img src="icon/github.png" alt="github">
+                                <p>github.com/mikael-pazini</p>
+                            </a>
+                            <button onclick="copy(this.previousElementSibling)">
+                                <img class="copy" src="icon/copy.png" alt="copy">
+                            </button>
+                        </div>
+
+                        <div class="socialButton">
+                            <a class="instagram" href="https://www.instagram.com/mikael_pazini/" target="_blank">
+                                <img src="icon/instagram.png" alt="instagram">
+                                <p>instagram.com/mikael_pazini</p>
+                            </a>
+                            <button onclick="copy(this.previousElementSibling)">
+                                <img class="copy" src="icon/copy.png" alt="copy">
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="send">
+                        <div class="socialButton">
+                            <a class="whatsapp" href="https://web.whatsapp.com/send?phone=5548991607261&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho" target="_blank">
+                                <img src="icon/whatsapp.png" alt="whatsapp">
+                                <p>+55 (48) 99160-7261</p>
+                            </a>
+                            <button onclick="copyData(this.previousElementSibling)">
+                                <img class="copy" src="icon/copy.png" alt="copy">
+                            </button>
+                        </div>
+
+                        <div class="socialButton">
+                            <a class="call" href="tel:+5548991607261" target="_blank">
+                                <img src="icon/call.png" alt="call">
+                                <p>5548991607261</p>
+                            </a>
+                            <button onclick="copyData(this.previousElementSibling)">
+                                <img class="copy" src="icon/copy.png" alt="copy">
+                            </button>
+                        </div>
+
+                        <div class="socialButton">
+                            <a class="email" href="mailto:mikaelpaz@gmail.com?subject=Quero lhe contratar&body=Ol%C3%A1, gostaria de saber mais sobre seu trabalho" target="_blank">
+                                <img src="icon/email.png" alt="email">
+                                <p>mikaelpaz@gmail.com</p>
+                            </a>
+                            <button onclick="copyData(this.previousElementSibling)">
+                                <img class="copy" src="icon/copy.png" alt="copy">
+                            </button>
+                        </div>
+                    </div>
+
+                </section> 
+
+            </main>
+            <footer>
+                <span></span>
+            </footer>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
