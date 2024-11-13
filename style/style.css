@@ -123,6 +123,7 @@ div#presentation > p {
 section#about-me > img {
     border-radius: 50%;
     width: 300px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.40), 0px 0px 20px rgba(255, 255, 255, 0.40);
 }
 section#about-me > p {
     width: 450px;
@@ -192,6 +193,7 @@ div.socialButton {
 }
 div.socialButton:hover {
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.40), 0px 0px 20px rgba(255, 255, 255, 0.40);
+    transition: 0.4s;
 }
 
 a.linkedin , a.github , a.instagram , a.whatsapp , a.call , a.email {
