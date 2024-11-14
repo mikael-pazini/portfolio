@@ -89,8 +89,8 @@ main#interface{
 }
 
 section {
-    width: 90vw;
-    min-height: 90vh;
+    width: 100vw;
+    min-height: 95vh;
     padding-bottom: 50px;
     display: flex;
     justify-content: space-around;
@@ -104,10 +104,12 @@ section#start {
     width: 90vw;
     padding-top: 50px;
     justify-content: space-evenly;
+    align-items: center;
     flex-flow: column wrap;
 }
 section#start > h1 {
     padding-top: 50px;
+    padding-left: 20px;
     text-transform: uppercase;
     font-size: 3em;
 }
