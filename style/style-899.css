@@ -94,6 +94,7 @@ main#interface{
 section {
     width: 80%;
     min-height: 80vh;
+    padding-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -144,6 +145,7 @@ section#about-me > p {
 
 section#projects {
     width: 500px;
+    padding-top: 75px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
