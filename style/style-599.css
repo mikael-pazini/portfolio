@@ -10,7 +10,7 @@
 }
 
 * {
-    margin: auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: 0.1s;
@@ -40,7 +40,7 @@ body, html {
 }
 @keyframes moveStars {
     from { background-position: 0 0; }
-    to { background-position: -10000px 9000px; }
+    to { background-position: -5000px 5000px; }
 }
 
 header{
@@ -51,7 +51,7 @@ header{
 }
 
 nav {
-    font-size: 0.8em;
+    font-size: 1em;
     /* position: relative; */
     width: calc(100% - 10px);
     height: 40px;
@@ -82,14 +82,14 @@ main#interface{
     /* justify-items: stretch; */
     align-content: space-around;
     flex-flow: column wrap;
-    margin: auto;
-    width: 300px;
+    margin: 0;
+    width: 90vw;
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
 section {
-    width: 90%;
+    width: 90vw;
     min-height: 90vh;
     display: flex;
     justify-content: space-around;
@@ -100,7 +100,7 @@ section {
 }
 
 section#start {
-    width: 300px;
+    width: 90vw;
     justify-content: space-evenly;
     flex-flow: column wrap;
 }
@@ -110,7 +110,7 @@ section#start > h1 {
     font-size: 3em;
 }
 div#presentation {
-    width: 300px;
+    width: 90vw;
     height: 600px;
 
     display: flex;
@@ -128,11 +128,11 @@ div#presentation > p {
 }
 
 section#about-me {
-    width: 500px;
+    width: 90vw;
 }
 section#about-me > img {
     border-radius: 50%;
-    width: 300px;
+    width: 275px;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.40), 0px 0px 20px rgba(255, 255, 255, 0.40);
 }
 section#about-me > p {
@@ -141,7 +141,7 @@ section#about-me > p {
 }
 
 section#projects {
-    width: 500px;
+    width: 90vw;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -154,7 +154,7 @@ section#projects > h2 {
 } 
 */
 section#projects > div.technologies {
-    width: 350px;
+    width: 300px;
     height: 250px;
     margin-bottom: 30px;
     text-align: center;
@@ -188,7 +188,7 @@ div.block > div {
 }
 
 section#contact {
-    width: 300px;
+    width: 95vw;;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -196,7 +196,7 @@ section#contact {
 }
 section#contact > div{
     margin: 0;
-    width: 350px;
+    width: 90vw;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
