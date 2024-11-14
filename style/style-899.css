@@ -20,7 +20,6 @@ body, html {
     color: var(--white);
     font-family: "JetBrains Mono", monospace;
     overflow-x: hidden;
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     text-shadow: 1px 1px 2px var(--dim-gray), 0 0 1em var(--white), 0 0 0.2em var(--white);
 }
@@ -36,8 +35,7 @@ body, html {
     animation: moveStars 120s linear infinite;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 @keyframes moveStars {
     from { background-position: 0 0; }
@@ -53,7 +51,7 @@ header{
 
 nav {
     position: relative;
-    width: calc(100% - 250px);
+    width: calc(100% - 10px);
     height: 50px;
     text-align: center;
     margin: auto;
@@ -62,59 +60,58 @@ nav {
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.40);
 }
 ul{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-flow: row nowrap;
 }
-li {
-    padding: 10px 50px;
-}
-li > a {
-    width: max-content;
-}
-
 a {
     text-decoration: none;
     color: var(--white);
 }
 
 main#interface{
-    position: relative;
+    display: flex;
+    justify-items: stretch;
+    align-content: space-around;
+    flex-flow: column wrap;
     margin: auto;
-    width: 900px;
+    width: 600px;
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
 section {
-    width: 100%;
-    min-height: 100vh;
+    width: 80%;
+    min-height: 80vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-flow: row wrap;
-    /* background-color: rgba(255, 255, 255, 0.300); */
+    flex-flow: column wrap;
     /*  */
-    scroll-snap-align: start;
+    /* background-color: rgba(255, 255, 255, 0.300); */
 }
 
 section#start {
+    width: 500px;
     justify-content: space-evenly;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
 }
 section#start > h1 {
     text-transform: uppercase;
     font-size: 4em;
 }
 div#presentation {
-    width: 900px;
+    width: 450px;
+    height: 350px;
+
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: start;
 }
 div#presentation > h2 {
     width: 200px;
@@ -123,6 +120,10 @@ div#presentation > h2 {
 div#presentation > p {
     width: 450px;
     font-size: 1.5em;
+}
+
+section#about-me {
+    width: 500px;
 }
 section#about-me > img {
     border-radius: 50%;
@@ -135,9 +136,10 @@ section#about-me > p {
 }
 
 section#projects {
+    width: 500px;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 /*  REMOVIDO
@@ -147,26 +149,27 @@ section#projects > h2 {
 } 
 */
 section#projects > div.technologies {
-    width: 550px;
-    height: 200px;
+    width: 500px;
+    height: 250px;
+    margin-bottom: 30px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
 }
 div.technologies > p {
     text-align: center;
     width: max-content;
-    padding: 5px 10px;
+    margin: 10px 10px;;
     font-size: 1.5em;
     border-radius: 25px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.20);
     background-color: var(--night);
 }
 section#projects > div.block {
-    width: 900px;
+    width: 450px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -175,21 +178,29 @@ div.block > div {
     min-width: 250px;
     background-color: var(--dim-gray);
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.40);
+    margin: 30px 10px;
 }
 
+section#contact {
+    width: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
 section#contact > div{
-    width: 400px;
-    height: 800px;
+    width: 450px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
 }
 
 div.socialButton {
     border-radius: 32px;
     width: 400px;
     height: 64px;
+    margin-bottom: 30px;
     background-color: var(--night);
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.40);
 
@@ -227,7 +238,7 @@ button {
 footer {
     position: fixed;
     bottom: 0px;
-    width: calc(100% - 250px);
+    width: calc(100% - 10px);
     margin: auto;
     background-color: var(--night);
     border-radius: 25px 25px 0 0;
