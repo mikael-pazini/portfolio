@@ -144,7 +144,7 @@ section#about-me > p {
 }
 
 section#projects {
-    width: 90vw;
+    width: 100vw;
     padding-top: 50px;
     display: flex;
     flex-flow: column wrap;
@@ -158,9 +158,9 @@ section#projects > h2 {
 } 
 */
 section#projects > div.technologies {
-    width: 300px;
-    height: 250px;
-    margin-bottom: 30px;
+    width: 90vw;
+    height: 200px;
+    margin: 0px 0px 30px 0px;
     text-align: center;
     display: flex;
     flex-flow: column wrap;
@@ -169,9 +169,9 @@ section#projects > div.technologies {
 }
 div.technologies > p {
     text-align: center;
-    width: 150px;
+    width: 125px;
     margin: 10px 10px;;
-    font-size: 1.5em;
+    font-size: 1.25em;
     border-radius: 25px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.20);
     background-color: var(--night);
