@@ -50,7 +50,7 @@ header{
 }
 
 nav {
-    position: relative;
+    /* position: relative; */
     width: calc(100% - 10px);
     height: 50px;
     text-align: center;
@@ -58,6 +58,8 @@ nav {
     background-color: var(--night);
     border-radius: 0 0 75px 75px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.40);
+    display: flex;
+    justify-content: center;
 }
 ul{
     width: 90%;
@@ -68,7 +70,11 @@ ul{
     justify-content: space-evenly;
     flex-flow: row nowrap;
 }
+li > a {
+    width: max-content;
+}
 a {
+    white-space: nowrap;
     text-decoration: none;
     color: var(--white);
 }
