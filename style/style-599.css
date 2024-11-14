@@ -91,6 +91,7 @@ main#interface{
 section {
     width: 90vw;
     min-height: 90vh;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
