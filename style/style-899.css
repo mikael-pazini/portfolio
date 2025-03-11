@@ -192,7 +192,7 @@ section#projects > div.block {
 
 div.block > div {
   width: 250px;
-  height: 156.25px;
+  height: 150px;
   background-color: var(--dim-gray);
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
   display: flex;
@@ -203,7 +203,7 @@ div.block > div {
 
 div.block img {
   width: 250px;
-  height: 156.25px;
+  height: 155px;
 }
 
 section#contact {
