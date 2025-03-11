@@ -205,6 +205,52 @@ div.block img {
   width: 250px;
   height: 155px;
 }
+/*  */
+.project {
+  position: relative;
+  display: inline-block;
+}
+
+.image-link {
+  display: block;
+  position: relative;
+}
+
+.image-link img {
+  width: 100%; /* Ajuste conforme necessário */
+  display: block;
+  transition: filter 0.3s ease; /* Suaviza o escurecimento */
+}
+
+.image-link:hover img {
+  filter: brightness(50%); /* Escurece a imagem ao passar o mouse */
+}
+
+.text-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  width: 240px;
+  white-space: normal; /* Permite a quebra de linha */
+  word-wrap: break-word; /* Quebra palavras longas se necessário */
+  z-index: 1;
+}
+
+.image-link:hover .text-hover {
+  opacity: 1;
+}
+
+/*  */
 
 section#contact {
   width: 500px;
